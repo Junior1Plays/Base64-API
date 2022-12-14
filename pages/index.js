@@ -1,13 +1,10 @@
-import Link from 'next/link';
-
-async function Home() {
+async function home(request, response) {
     return (<div>
         <h1>Home</h1>
 
-        <Link href="/sobre">
-            <a>Acessar página Sobre</a>
-        </Link>
+        <a href="/sobre">
+            <p>Acessar página Sobre</p>
+        </a>
     </div>)
 }
-
-export default Home
+export default home;
