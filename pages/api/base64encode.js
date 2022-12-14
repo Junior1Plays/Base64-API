@@ -3,7 +3,11 @@ async function base64encode(request, response) {
     const string = body.string;
     if(!string) return response.send("String is missing.");
 
-    return response.send(btoa(string));
+    try {
+        return response.send(btoa(string));
+    } catch(ex) {
+        return response.send(ex);
+    }
 }
 
 export default base64encode;
