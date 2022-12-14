@@ -1,4 +1,6 @@
-async function home(request, response) {
-    return response.send("<div><h1>Home</h1><a href="/sobre"><p>Acessar página Sobre</p></a></div>")
-}
-export default home;
+<DOCTYPE html>
+<html>
+    <body>
+        <p>Quando o sol viu sua beleza, ele soltou rajadas de fogo na terra... pra te matar.</p>
+    </body>
+</html>
